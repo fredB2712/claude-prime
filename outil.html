@@ -36,13 +36,40 @@
       max-width: 760px;
       margin: 40px auto;
     }
-    header { margin-bottom: 32px; }
+    header { margin-bottom: 24px; }
     h1 {
       margin: 0 0 8px;
       font-size: clamp(1.8rem, 5vw, 2.4rem);
     }
     h1 span { color: var(--accent); }
-    .intro { margin: 0; color: var(--muted); }
+    .intro { margin: 0 0 20px; color: var(--muted); }
+    nav.sommaire {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 40px;
+    }
+    nav.sommaire ol {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2;
+      column-gap: 24px;
+    }
+    nav.sommaire li { margin-bottom: 4px; break-inside: avoid; }
+    nav.sommaire a { color: var(--accent); text-decoration: none; }
+    nav.sommaire a:hover { text-decoration: underline; }
+    section { margin-bottom: 48px; }
+    h2 {
+      margin: 0 0 4px;
+      font-size: 1.5rem;
+      padding-top: 8px;
+      border-top: 2px solid var(--accent);
+    }
+    .categorie-desc {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
     article {
       background: var(--card);
       border: 1px solid var(--border);
@@ -50,7 +77,7 @@
       padding: 16px 20px;
       margin-bottom: 12px;
     }
-    h2 {
+    h3 {
       margin: 0 0 4px;
       font-size: 1.15rem;
     }
@@ -70,416 +97,490 @@
       color: var(--muted);
     }
     footer a { color: var(--accent); }
+    @media (max-width: 600px) {
+      nav.sommaire ol { columns: 1; }
+    }
   </style>
 </head>
 <body>
   <main>
     <header>
       <h1>Liste <span>d'outils</span></h1>
-      <p class="intro">Liste unique issue de la comparaison entre la galerie d'images et le dépôt <a href="https://github.com/Scap-Mehdi/awesome-vibecoding">awesome-vibecoding</a>. Classée par ordre alphabétique.</p>
+      <p class="intro">Liste unique issue de la comparaison entre la galerie d'images et le dépôt <a href="https://github.com/Scap-Mehdi/awesome-vibecoding">awesome-vibecoding</a>, classée par catégorie.</p>
     </header>
 
-    <article>
-      <h2>Acternity UI</h2>
-      <p class="lien"><em><a href="https://acternityui.com">https://acternityui.com</a></em></p>
-      <p class="desc">Plus de 200 composants animés pour React et Tailwind.</p>
-    </article>
-
-    <article>
-      <h2>Agent QA</h2>
-      <p class="lien"><em><a href="https://github.com/vostride/agent-qa">https://github.com/vostride/agent-qa</a></em></p>
-      <p class="desc">Tests web et mobiles rédigés en langage naturel.</p>
-    </article>
-
-    <article>
-      <h2>Aider</h2>
-      <p class="lien"><em><a href="https://github.com/Aider-AI/aider">https://github.com/Aider-AI/aider</a></em></p>
-      <p class="desc">Pair programming dans le terminal, avec intégration Git.</p>
-    </article>
-
-    <article>
-      <h2>Anime.js</h2>
-      <p class="lien"><em><a href="https://animejs.com">https://animejs.com</a></em></p>
-      <p class="desc">Bibliothèque JavaScript légère pour les animations.</p>
-    </article>
-
-    <article>
-      <h2>Awwwards</h2>
-      <p class="lien"><em><a href="https://www.awwwards.com">https://www.awwwards.com</a></em></p>
-      <p class="desc">Galerie de sites web primés pour s'inspirer.</p>
-    </article>
-
-    <article>
-      <h2>Bolt.new</h2>
-      <p class="lien"><em><a href="https://bolt.new/">https://bolt.new/</a></em></p>
-      <p class="desc">Création d'applications à partir de langage naturel.</p>
-    </article>
-
-    <article>
-      <h2>Caliber</h2>
-      <p class="lien"><em><a href="https://github.com/caliber-ai-org/ai-setup">https://github.com/caliber-ai-org/ai-setup</a></em></p>
-      <p class="desc">CLI qui génère et synchronise les configurations d'agents.</p>
-    </article>
-
-    <article>
-      <h2>Claude Code</h2>
-      <p class="lien"><em><a href="https://code.claude.com/docs/en/overview">https://code.claude.com/docs/en/overview</a></em></p>
-      <p class="desc">Assistant de code agentique pour le terminal.</p>
-    </article>
-
-    <article>
-      <h2>Cline</h2>
-      <p class="lien"><em><a href="https://github.com/cline/cline">https://github.com/cline/cline</a></em></p>
-      <p class="desc">Agent de code pour l'IDE, le terminal et le bureau.</p>
-    </article>
-
-    <article>
-      <h2>Cloudflare MCP</h2>
-      <p class="lien"><em><a href="https://github.com/cloudflare/mcp-server-cloudflare">https://github.com/cloudflare/mcp-server-cloudflare</a></em></p>
-      <p class="desc">Gestion du déploiement et des ressources cloud.</p>
-    </article>
-
-    <article>
-      <h2>Context7</h2>
-      <p class="lien"><em><a href="https://github.com/upstash/context7">https://github.com/upstash/context7</a></em></p>
-      <p class="desc">Récupération de documentation de bibliothèques pour le contexte.</p>
-    </article>
-
-    <article>
-      <h2>Cruiseloaders</h2>
-      <p class="lien"><em><a href="https://cruiseloaders.dominikkisiel.com">https://cruiseloaders.dominikkisiel.com</a></em></p>
-      <p class="desc">Loaders animés pour rendre l'attente plus agréable.</p>
-    </article>
-
-    <article>
-      <h2>CSS Text Effects</h2>
-      <p class="lien"><em><a href="https://csstexteffects.colorlion.co">https://csstexteffects.colorlion.co</a></em></p>
-      <p class="desc">Effets de texte CSS créatifs et animations.</p>
-    </article>
-
-    <article>
-      <h2>Cursor</h2>
-      <p class="lien"><em><a href="https://www.cursor.com/">https://www.cursor.com/</a></em></p>
-      <p class="desc">Éditeur de code et agent pour l'implémentation et le débogage.</p>
-    </article>
-
-    <article>
-      <h2>Delta (Zed)</h2>
-      <p class="lien"><em><a href="https://delta.dev/">https://delta.dev/</a></em></p>
-      <p class="desc">Espace de travail multijoueur pour agents, avec revue des threads.</p>
-    </article>
-
-    <article>
-      <h2>DESIGNmd</h2>
-      <p class="lien"><em><a href="https://designmd.ai">https://designmd.ai</a></em></p>
-      <p class="desc">Systèmes de design au format Markdown, lisibles par les agents.</p>
-    </article>
-
-    <article>
-      <h2>Duckweed</h2>
-      <p class="lien"><em><a href="https://github.com/MusicMaster4/Duckweed">https://github.com/MusicMaster4/Duckweed</a></em></p>
-      <p class="desc">Espace de travail local multiplateforme pour agents.</p>
-    </article>
-
-    <article>
-      <h2>Dyad</h2>
-      <p class="lien"><em><a href="https://github.com/dyad-sh/dyad">https://github.com/dyad-sh/dyad</a></em></p>
-      <p class="desc">Création locale d'applications avec des fournisseurs de modèles configurables.</p>
-    </article>
-
-    <article>
-      <h2>E2B</h2>
-      <p class="lien"><em><a href="https://github.com/e2b-dev/E2B">https://github.com/e2b-dev/E2B</a></em></p>
-      <p class="desc">Environnement cloud sécurisé (sandbox) pour agents.</p>
-    </article>
-
-    <article>
-      <h2>Exa Search</h2>
-      <p class="lien"><em><a href="https://exa.ai/">https://exa.ai/</a></em></p>
-      <p class="desc">Moteur de recherche utilisé par les workflows d'automatisation.</p>
-    </article>
-
-    <article>
-      <h2>Filesystem MCP</h2>
-      <p class="lien"><em><a href="https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem">https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem</a></em></p>
-      <p class="desc">Accès contrôlé aux fichiers du projet pour les agents.</p>
-    </article>
-
-    <article>
-      <h2>Gemini CLI</h2>
-      <p class="lien"><em><a href="https://github.com/google-gemini/gemini-cli">https://github.com/google-gemini/gemini-cli</a></em></p>
-      <p class="desc">Agent de code open source pour le terminal.</p>
-    </article>
-
-    <article>
-      <h2>GitHub Copilot</h2>
-      <p class="lien"><em><a href="https://github.com/features/copilot">https://github.com/features/copilot</a></em></p>
-      <p class="desc">Assistance au code et workflows d'agents dans GitHub et les IDE.</p>
-    </article>
-
-    <article>
-      <h2>GitHub MCP</h2>
-      <p class="lien"><em><a href="https://github.com/github/github-mcp-server">https://github.com/github/github-mcp-server</a></em></p>
-      <p class="desc">Workflows de dépôts, issues et pull requests.</p>
-    </article>
-
-    <article>
-      <h2>Godly</h2>
-      <p class="lien"><em><a href="https://godly.website">https://godly.website</a></em></p>
-      <p class="desc">Sites web sélectionnés à la main pour leur qualité de réalisation.</p>
-    </article>
-
-    <article>
-      <h2>Goose</h2>
-      <p class="lien"><em><a href="https://github.com/aaif-goose/goose">https://github.com/aaif-goose/goose</a></em></p>
-      <p class="desc">Agent local extensible, avec outils MCP.</p>
-    </article>
-
-    <article>
-      <h2>Gradient Buttons</h2>
-      <p class="lien"><em><a href="https://gradientbuttons.colorlion.co">https://gradientbuttons.colorlion.co</a></em></p>
-      <p class="desc">Boutons à dégradé et styles variés.</p>
-    </article>
-
-    <article>
-      <h2>Kinetica</h2>
-      <p class="lien"><em><a href="https://kinetica.colorlion.co">https://kinetica.colorlion.co</a></em></p>
-      <p class="desc">Plus de 150 effets de mouvement avec React.</p>
-    </article>
-
-    <article>
-      <h2>Kiro</h2>
-      <p class="lien"><em><a href="https://kiro.dev">https://kiro.dev</a></em></p>
-      <p class="desc">Agent de code d'AWS avec spécifications et tests.</p>
-    </article>
-
-    <article>
-      <h2>Liquid Glass</h2>
-      <p class="lien"><em><a href="https://liquidglass.dev">https://liquidglass.dev</a></em></p>
-      <p class="desc">Effets de verre liquide pour les interfaces.</p>
-    </article>
-
-    <article>
-      <h2>llm.log</h2>
-      <p class="lien"><em><a href="https://github.com/lanesket/llm.log">https://github.com/lanesket/llm.log</a></em></p>
-      <p class="desc">Suivi des coûts, tokens et traces via un proxy local.</p>
-    </article>
-
-    <article>
-      <h2>Lovable</h2>
-      <p class="lien"><em><a href="https://lovable.dev/">https://lovable.dev/</a></em></p>
-      <p class="desc">Génération d'applications full-stack avec Supabase.</p>
-    </article>
-
-    <article>
-      <h2>Magic UI</h2>
-      <p class="lien"><em><a href="https://magicui.design">https://magicui.design</a></em></p>
-      <p class="desc">Composants UI conçus pour les sites web modernes.</p>
-    </article>
-
-    <article>
-      <h2>Mapcn</h2>
-      <p class="lien"><em><a href="https://mapcn.dev">https://mapcn.dev</a></em></p>
-      <p class="desc">Composants de carte : marqueurs, routes, popups.</p>
-    </article>
-
-    <article>
-      <h2>Minimal Gallery</h2>
-      <p class="lien"><em><a href="https://minimal.gallery">https://minimal.gallery</a></em></p>
-      <p class="desc">Sites haut de gamme sélectionnés pour nourrir un agent.</p>
-    </article>
-
-    <article>
-      <h2>Mobbin</h2>
-      <p class="lien"><em><a href="https://mobbin.com">https://mobbin.com</a></em></p>
-      <p class="desc">Flux réels issus de vrais produits d'applications.</p>
-    </article>
-
-    <article>
-      <h2>Motion Primitives</h2>
-      <p class="lien"><em><a href="https://motion-primitives.com">https://motion-primitives.com</a></em></p>
-      <p class="desc">Composants d'animation et d'interaction prêts à l'emploi.</p>
-    </article>
-
-    <article>
-      <h2>Neon MCP</h2>
-      <p class="lien"><em><a href="https://github.com/neondatabase/mcp-server-neon">https://github.com/neondatabase/mcp-server-neon</a></em></p>
-      <p class="desc">Connexion des workflows de développement aux bases Neon.</p>
-    </article>
-
-    <article>
-      <h2>Notion MCP</h2>
-      <p class="lien"><em><a href="https://developers.notion.com/guides/mcp/overview">https://developers.notion.com/guides/mcp/overview</a></em></p>
-      <p class="desc">Recherche, lecture et mise à jour de contenu Notion.</p>
-    </article>
-
-    <article>
-      <h2>Onlook</h2>
-      <p class="lien"><em><a href="https://www.onlook.com/">https://www.onlook.com/</a></em></p>
-      <p class="desc">Édition visuelle des interfaces en parallèle du code.</p>
-    </article>
-
-    <article>
-      <h2>OpenAI Codex CLI</h2>
-      <p class="lien"><em><a href="https://openai.com/codex/">https://openai.com/codex/</a></em></p>
-      <p class="desc">Agent de code d'OpenAI qui tourne localement dans le terminal.</p>
-    </article>
-
-    <article>
-      <h2>OpenSpec</h2>
-      <p class="lien"><em><a href="https://github.com/Fission-AI/OpenSpec">https://github.com/Fission-AI/OpenSpec</a></em></p>
-      <p class="desc">Cadre de développement piloté par les spécifications.</p>
-    </article>
-
-    <article>
-      <h2>Parallel Code</h2>
-      <p class="lien"><em><a href="https://github.com/johannesjo/parallel-code">https://github.com/johannesjo/parallel-code</a></em></p>
-      <p class="desc">Agents dans des worktrees Git isolés.</p>
-    </article>
-
-    <article>
-      <h2>Pi</h2>
-      <p class="lien"><em><a href="https://github.com/earendil-works/pi">https://github.com/earendil-works/pi</a></em></p>
-      <p class="desc">Agent de code extensible pour le terminal.</p>
-    </article>
-
-    <article>
-      <h2>Playwright MCP</h2>
-      <p class="lien"><em><a href="https://github.com/microsoft/playwright-mcp">https://github.com/microsoft/playwright-mcp</a></em></p>
-      <p class="desc">Automatisation de navigateur via des instantanés structurés.</p>
-    </article>
-
-    <article>
-      <h2>PR-Agent</h2>
-      <p class="lien"><em><a href="https://github.com/The-PR-Agent/pr-agent">https://github.com/The-PR-Agent/pr-agent</a></em></p>
-      <p class="desc">Relecteur de pull requests maintenu par la communauté.</p>
-    </article>
-
-    <article>
-      <h2>Prbl</h2>
-      <p class="lien"><em><a href="https://getprbl.com">https://getprbl.com</a></em></p>
-      <p class="desc">Scan des failles fréquentes dans le code généré par IA.</p>
-    </article>
-
-    <article>
-      <h2>Publish.my</h2>
-      <p class="lien"><em><a href="https://publish.my/">https://publish.my/</a></em></p>
-      <p class="desc">Publication de sites statiques pilotée par agent.</p>
-    </article>
-
-    <article>
-      <h2>Qodo</h2>
-      <p class="lien"><em><a href="https://www.qodo.ai">https://www.qodo.ai</a></em></p>
-      <p class="desc">Moteur de revue de code par IA (ex-CodiumAI).</p>
-    </article>
-
-    <article>
-      <h2>Relume Gallery</h2>
-      <p class="lien"><em><a href="https://www.relume.io/gallery">https://www.relume.io/gallery</a></em></p>
-      <p class="desc">Plus de 2 600 styles de produits réels avec typographie.</p>
-    </article>
-
-    <article>
-      <h2>Replit</h2>
-      <p class="lien"><em><a href="https://replit.com/">https://replit.com/</a></em></p>
-      <p class="desc">Création d'applications avec Replit Agent.</p>
-    </article>
-
-    <article>
-      <h2>scrollstide</h2>
-      <p class="lien"><em><a href="https://scrollstide.io">https://scrollstide.io</a></em></p>
-      <p class="desc">600+ prompts primés et code source complet pour sites 3D et au scroll.</p>
-    </article>
-
-    <article>
-      <h2>Semgrep MCP</h2>
-      <p class="lien"><em><a href="https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp">https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp</a></em></p>
-      <p class="desc">Analyse de sécurité via le CLI Semgrep.</p>
-    </article>
-
-    <article>
-      <h2>Sentry MCP</h2>
-      <p class="lien"><em><a href="https://github.com/getsentry/sentry-mcp">https://github.com/getsentry/sentry-mcp</a></em></p>
-      <p class="desc">Inspection des erreurs applicatives pour diagnostiquer les échecs.</p>
-    </article>
-
-    <article>
-      <h2>Shadblocks</h2>
-      <p class="lien"><em><a href="https://shadblocks.com">https://shadblocks.com</a></em></p>
-      <p class="desc">Blocs complets : boutons, sections et pages.</p>
-    </article>
-
-    <article>
-      <h2>shadcn/ui</h2>
-      <p class="lien"><em><a href="https://ui.shadcn.com">https://ui.shadcn.com</a></em></p>
-      <p class="desc">Composants React réutilisables, base de nombreux projets.</p>
-    </article>
-
-    <article>
-      <h2>Shadertoy</h2>
-      <p class="lien"><em><a href="https://www.shadertoy.com">https://www.shadertoy.com</a></em></p>
-      <p class="desc">Shaders à étudier et à remixer.</p>
-    </article>
-
-    <article>
-      <h2>Shep</h2>
-      <p class="lien"><em><a href="https://github.com/shep-ai/shep">https://github.com/shep-ai/shep</a></em></p>
-      <p class="desc">Orchestration d'agents parallèles jusqu'aux pull requests brouillon.</p>
-    </article>
-
-    <article>
-      <h2>Superagent</h2>
-      <p class="lien"><em><a href="https://github.com/pungme/superagent-desktop">https://github.com/pungme/superagent-desktop</a></em></p>
-      <p class="desc">Espace de travail macOS pour Claude Code ou Codex.</p>
-    </article>
-
-    <article>
-      <h2>Supabase MCP</h2>
-      <p class="lien"><em><a href="https://github.com/supabase/mcp">https://github.com/supabase/mcp</a></em></p>
-      <p class="desc">Schémas, requêtes et configuration Supabase.</p>
-    </article>
-
-    <article>
-      <h2>3Dicons</h2>
-      <p class="lien"><em><a href="https://3dicons.co">https://3dicons.co</a></em></p>
-      <p class="desc">Bibliothèque d'icônes 3D gratuites pour interfaces modernes.</p>
-    </article>
-
-    <article>
-      <h2>ulverse</h2>
-      <p class="lien"><em><a href="https://ulverse.dev">https://ulverse.dev</a></em></p>
-      <p class="desc">Éléments UI et composants interactifs créés par la communauté.</p>
-    </article>
-
-    <article>
-      <h2>usage</h2>
-      <p class="lien"><em><a href="https://github.com/aqua5230/usage">https://github.com/aqua5230/usage</a></em></p>
-      <p class="desc">Affichage des quotas d'agents dans la barre de menus.</p>
-    </article>
-
-    <article>
-      <h2>v0</h2>
-      <p class="lien"><em><a href="https://v0.app/">https://v0.app/</a></em></p>
-      <p class="desc">Génération d'interfaces UI et React par Vercel.</p>
-    </article>
-
-    <article>
-      <h2>VibePrompts</h2>
-      <p class="lien"><em><a href="https://vibeprompts.dev">https://vibeprompts.dev</a></em></p>
-      <p class="desc">Prompts prêts à l'emploi pour dashboards et landing pages.</p>
-    </article>
-
-    <article>
-      <h2>Warp Terminal</h2>
-      <p class="lien"><em><a href="https://www.warp.dev/terminal">https://www.warp.dev/terminal</a></em></p>
-      <p class="desc">Terminal orienté agents.</p>
-    </article>
-
-    <article>
-      <h2>XcodeBuildMCP</h2>
-      <p class="lien"><em><a href="https://github.com/getsentry/XcodeBuildMCP">https://github.com/getsentry/XcodeBuildMCP</a></em></p>
-      <p class="desc">Outils de build et de debug pour projets Apple.</p>
-    </article>
+    <nav class="sommaire" aria-label="Sommaire">
+      <ol>
+        <li><a href="#agents-code">Agents de code</a></li>
+        <li><a href="#creation-apps">Création d'applications</a></li>
+        <li><a href="#galeries">Galeries d'inspiration</a></li>
+        <li><a href="#design-prompts">Design systems & prompts</a></li>
+        <li><a href="#composants">Composants UI</a></li>
+        <li><a href="#animations">Animations & effets visuels</a></li>
+        <li><a href="#contexte">Contexte & intégrations</a></li>
+        <li><a href="#tests">Tests, revue & sécurité</a></li>
+        <li><a href="#deploiement">Déploiement & build</a></li>
+        <li><a href="#orchestration">Orchestration d'agents</a></li>
+        <li><a href="#suivi">Suivi & terminal</a></li>
+      </ol>
+    </nav>
+
+    <section id="agents-code">
+      <h2>Agents de code</h2>
+      <p class="categorie-desc">Assistants qui écrivent, modifient et déboguent le code, dans le terminal ou dans l'éditeur.</p>
+
+      <article>
+        <h3>Aider</h3>
+        <p class="lien"><em><a href="https://github.com/Aider-AI/aider">https://github.com/Aider-AI/aider</a></em></p>
+        <p class="desc">Pair programming dans le terminal, avec intégration Git.</p>
+      </article>
+
+      <article>
+        <h3>Claude Code</h3>
+        <p class="lien"><em><a href="https://code.claude.com/docs/en/overview">https://code.claude.com/docs/en/overview</a></em></p>
+        <p class="desc">Assistant de code agentique pour le terminal.</p>
+      </article>
+
+      <article>
+        <h3>Cline</h3>
+        <p class="lien"><em><a href="https://github.com/cline/cline">https://github.com/cline/cline</a></em></p>
+        <p class="desc">Agent de code pour l'IDE, le terminal et le bureau.</p>
+      </article>
+
+      <article>
+        <h3>Cursor</h3>
+        <p class="lien"><em><a href="https://www.cursor.com/">https://www.cursor.com/</a></em></p>
+        <p class="desc">Éditeur de code et agent pour l'implémentation et le débogage.</p>
+      </article>
+
+      <article>
+        <h3>Gemini CLI</h3>
+        <p class="lien"><em><a href="https://github.com/google-gemini/gemini-cli">https://github.com/google-gemini/gemini-cli</a></em></p>
+        <p class="desc">Agent de code open source pour le terminal.</p>
+      </article>
+
+      <article>
+        <h3>GitHub Copilot</h3>
+        <p class="lien"><em><a href="https://github.com/features/copilot">https://github.com/features/copilot</a></em></p>
+        <p class="desc">Assistance au code et workflows d'agents dans GitHub et les IDE.</p>
+      </article>
+
+      <article>
+        <h3>Goose</h3>
+        <p class="lien"><em><a href="https://github.com/aaif-goose/goose">https://github.com/aaif-goose/goose</a></em></p>
+        <p class="desc">Agent local extensible, avec outils MCP.</p>
+      </article>
+
+      <article>
+        <h3>Kiro</h3>
+        <p class="lien"><em><a href="https://kiro.dev">https://kiro.dev</a></em></p>
+        <p class="desc">Agent de code d'AWS avec spécifications et tests.</p>
+      </article>
+
+      <article>
+        <h3>OpenAI Codex CLI</h3>
+        <p class="lien"><em><a href="https://openai.com/codex/">https://openai.com/codex/</a></em></p>
+        <p class="desc">Agent de code d'OpenAI qui tourne localement dans le terminal.</p>
+      </article>
+
+      <article>
+        <h3>Pi</h3>
+        <p class="lien"><em><a href="https://github.com/earendil-works/pi">https://github.com/earendil-works/pi</a></em></p>
+        <p class="desc">Agent de code extensible pour le terminal.</p>
+      </article>
+    </section>
+
+    <section id="creation-apps">
+      <h2>Création d'applications</h2>
+      <p class="categorie-desc">Outils qui génèrent une application complète à partir d'une description en langage naturel.</p>
+
+      <article>
+        <h3>Bolt.new</h3>
+        <p class="lien"><em><a href="https://bolt.new/">https://bolt.new/</a></em></p>
+        <p class="desc">Création d'applications à partir de langage naturel.</p>
+      </article>
+
+      <article>
+        <h3>Dyad</h3>
+        <p class="lien"><em><a href="https://github.com/dyad-sh/dyad">https://github.com/dyad-sh/dyad</a></em></p>
+        <p class="desc">Création locale d'applications avec des fournisseurs de modèles configurables.</p>
+      </article>
+
+      <article>
+        <h3>Lovable</h3>
+        <p class="lien"><em><a href="https://lovable.dev/">https://lovable.dev/</a></em></p>
+        <p class="desc">Génération d'applications full-stack avec Supabase.</p>
+      </article>
+
+      <article>
+        <h3>Onlook</h3>
+        <p class="lien"><em><a href="https://www.onlook.com/">https://www.onlook.com/</a></em></p>
+        <p class="desc">Édition visuelle des interfaces en parallèle du code.</p>
+      </article>
+
+      <article>
+        <h3>Replit</h3>
+        <p class="lien"><em><a href="https://replit.com/">https://replit.com/</a></em></p>
+        <p class="desc">Création d'applications avec Replit Agent.</p>
+      </article>
+
+      <article>
+        <h3>v0</h3>
+        <p class="lien"><em><a href="https://v0.app/">https://v0.app/</a></em></p>
+        <p class="desc">Génération d'interfaces UI et React par Vercel.</p>
+      </article>
+    </section>
+
+    <section id="galeries">
+      <h2>Galeries d'inspiration</h2>
+      <p class="categorie-desc">Sites et captures à étudier pour trouver un style, une mise en page ou des interactions.</p>
+
+      <article>
+        <h3>Awwwards</h3>
+        <p class="lien"><em><a href="https://www.awwwards.com">https://www.awwwards.com</a></em></p>
+        <p class="desc">Galerie de sites web primés pour s'inspirer.</p>
+      </article>
+
+      <article>
+        <h3>Godly</h3>
+        <p class="lien"><em><a href="https://godly.website">https://godly.website</a></em></p>
+        <p class="desc">Sites web sélectionnés à la main pour leur qualité de réalisation.</p>
+      </article>
+
+      <article>
+        <h3>Minimal Gallery</h3>
+        <p class="lien"><em><a href="https://minimal.gallery">https://minimal.gallery</a></em></p>
+        <p class="desc">Sites haut de gamme sélectionnés pour nourrir un agent.</p>
+      </article>
+
+      <article>
+        <h3>Mobbin</h3>
+        <p class="lien"><em><a href="https://mobbin.com">https://mobbin.com</a></em></p>
+        <p class="desc">Flux réels issus de vrais produits d'applications.</p>
+      </article>
+
+      <article>
+        <h3>Relume Gallery</h3>
+        <p class="lien"><em><a href="https://www.relume.io/gallery">https://www.relume.io/gallery</a></em></p>
+        <p class="desc">Plus de 2 600 styles de produits réels avec typographie.</p>
+      </article>
+
+      <article>
+        <h3>scrollstide</h3>
+        <p class="lien"><em><a href="https://scrollstide.io">https://scrollstide.io</a></em></p>
+        <p class="desc">600+ prompts primés et code source complet pour sites 3D et au scroll.</p>
+      </article>
+    </section>
+
+    <section id="design-prompts">
+      <h2>Design systems & prompts</h2>
+      <p class="categorie-desc">Règles de design et prompts prêts à l'emploi, à donner directement à un agent.</p>
+
+      <article>
+        <h3>DESIGNmd</h3>
+        <p class="lien"><em><a href="https://designmd.ai">https://designmd.ai</a></em></p>
+        <p class="desc">Systèmes de design au format Markdown, lisibles par les agents.</p>
+      </article>
+
+      <article>
+        <h3>VibePrompts</h3>
+        <p class="lien"><em><a href="https://vibeprompts.dev">https://vibeprompts.dev</a></em></p>
+        <p class="desc">Prompts prêts à l'emploi pour dashboards et landing pages.</p>
+      </article>
+    </section>
+
+    <section id="composants">
+      <h2>Composants UI</h2>
+      <p class="categorie-desc">Bibliothèques de composants et blocs réutilisables pour React et Tailwind.</p>
+
+      <article>
+        <h3>shadcn/ui</h3>
+        <p class="lien"><em><a href="https://ui.shadcn.com">https://ui.shadcn.com</a></em></p>
+        <p class="desc">Composants React réutilisables, base de nombreux projets.</p>
+      </article>
+
+      <article>
+        <h3>Magic UI</h3>
+        <p class="lien"><em><a href="https://magicui.design">https://magicui.design</a></em></p>
+        <p class="desc">Composants UI conçus pour les sites web modernes.</p>
+      </article>
+
+      <article>
+        <h3>Acternity UI</h3>
+        <p class="lien"><em><a href="https://acternityui.com">https://acternityui.com</a></em></p>
+        <p class="desc">Plus de 200 composants animés pour React et Tailwind.</p>
+      </article>
+
+      <article>
+        <h3>Shadblocks</h3>
+        <p class="lien"><em><a href="https://shadblocks.com">https://shadblocks.com</a></em></p>
+        <p class="desc">Blocs complets : boutons, sections et pages.</p>
+      </article>
+
+      <article>
+        <h3>ulverse</h3>
+        <p class="lien"><em><a href="https://ulverse.dev">https://ulverse.dev</a></em></p>
+        <p class="desc">Éléments UI et composants interactifs créés par la communauté.</p>
+      </article>
+
+      <article>
+        <h3>Mapcn</h3>
+        <p class="lien"><em><a href="https://mapcn.dev">https://mapcn.dev</a></em></p>
+        <p class="desc">Composants de carte : marqueurs, routes, popups.</p>
+      </article>
+
+      <article>
+        <h3>Motion Primitives</h3>
+        <p class="lien"><em><a href="https://motion-primitives.com">https://motion-primitives.com</a></em></p>
+        <p class="desc">Composants d'animation et d'interaction prêts à l'emploi.</p>
+      </article>
+    </section>
+
+    <section id="animations">
+      <h2>Animations & effets visuels</h2>
+      <p class="categorie-desc">Mouvements, effets de texte, boutons, shaders et ressources graphiques.</p>
+
+      <article>
+        <h3>Anime.js</h3>
+        <p class="lien"><em><a href="https://animejs.com">https://animejs.com</a></em></p>
+        <p class="desc">Bibliothèque JavaScript légère pour les animations.</p>
+      </article>
+
+      <article>
+        <h3>Kinetica</h3>
+        <p class="lien"><em><a href="https://kinetica.colorlion.co">https://kinetica.colorlion.co</a></em></p>
+        <p class="desc">Plus de 150 effets de mouvement avec React.</p>
+      </article>
+
+      <article>
+        <h3>CSS Text Effects</h3>
+        <p class="lien"><em><a href="https://csstexteffects.colorlion.co">https://csstexteffects.colorlion.co</a></em></p>
+        <p class="desc">Effets de texte CSS créatifs et animations.</p>
+      </article>
+
+      <article>
+        <h3>Gradient Buttons</h3>
+        <p class="lien"><em><a href="https://gradientbuttons.colorlion.co">https://gradientbuttons.colorlion.co</a></em></p>
+        <p class="desc">Boutons à dégradé et styles variés.</p>
+      </article>
+
+      <article>
+        <h3>Liquid Glass</h3>
+        <p class="lien"><em><a href="https://liquidglass.dev">https://liquidglass.dev</a></em></p>
+        <p class="desc">Effets de verre liquide pour les interfaces.</p>
+      </article>
+
+      <article>
+        <h3>Shadertoy</h3>
+        <p class="lien"><em><a href="https://www.shadertoy.com">https://www.shadertoy.com</a></em></p>
+        <p class="desc">Shaders à étudier et à remixer.</p>
+      </article>
+
+      <article>
+        <h3>Cruiseloaders</h3>
+        <p class="lien"><em><a href="https://cruiseloaders.dominikkisiel.com">https://cruiseloaders.dominikkisiel.com</a></em></p>
+        <p class="desc">Loaders animés pour rendre l'attente plus agréable.</p>
+      </article>
+
+      <article>
+        <h3>3Dicons</h3>
+        <p class="lien"><em><a href="https://3dicons.co">https://3dicons.co</a></em></p>
+        <p class="desc">Bibliothèque d'icônes 3D gratuites pour interfaces modernes.</p>
+      </article>
+    </section>
+
+    <section id="contexte">
+      <h2>Contexte & intégrations</h2>
+      <p class="categorie-desc">Serveurs MCP, documentation et spécifications qui donnent à l'agent le contexte de votre projet.</p>
+
+      <article>
+        <h3>Caliber</h3>
+        <p class="lien"><em><a href="https://github.com/caliber-ai-org/ai-setup">https://github.com/caliber-ai-org/ai-setup</a></em></p>
+        <p class="desc">CLI qui génère et synchronise les configurations d'agents.</p>
+      </article>
+
+      <article>
+        <h3>Context7</h3>
+        <p class="lien"><em><a href="https://github.com/upstash/context7">https://github.com/upstash/context7</a></em></p>
+        <p class="desc">Récupération de documentation de bibliothèques pour le contexte.</p>
+      </article>
+
+      <article>
+        <h3>Exa Search</h3>
+        <p class="lien"><em><a href="https://exa.ai/">https://exa.ai/</a></em></p>
+        <p class="desc">Moteur de recherche utilisé par les workflows d'automatisation.</p>
+      </article>
+
+      <article>
+        <h3>Filesystem MCP</h3>
+        <p class="lien"><em><a href="https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem">https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem</a></em></p>
+        <p class="desc">Accès contrôlé aux fichiers du projet pour les agents.</p>
+      </article>
+
+      <article>
+        <h3>GitHub MCP</h3>
+        <p class="lien"><em><a href="https://github.com/github/github-mcp-server">https://github.com/github/github-mcp-server</a></em></p>
+        <p class="desc">Workflows de dépôts, issues et pull requests.</p>
+      </article>
+
+      <article>
+        <h3>Neon MCP</h3>
+        <p class="lien"><em><a href="https://github.com/neondatabase/mcp-server-neon">https://github.com/neondatabase/mcp-server-neon</a></em></p>
+        <p class="desc">Connexion des workflows de développement aux bases Neon.</p>
+      </article>
+
+      <article>
+        <h3>Notion MCP</h3>
+        <p class="lien"><em><a href="https://developers.notion.com/guides/mcp/overview">https://developers.notion.com/guides/mcp/overview</a></em></p>
+        <p class="desc">Recherche, lecture et mise à jour de contenu Notion.</p>
+      </article>
+
+      <article>
+        <h3>OpenSpec</h3>
+        <p class="lien"><em><a href="https://github.com/Fission-AI/OpenSpec">https://github.com/Fission-AI/OpenSpec</a></em></p>
+        <p class="desc">Cadre de développement piloté par les spécifications.</p>
+      </article>
+
+      <article>
+        <h3>Supabase MCP</h3>
+        <p class="lien"><em><a href="https://github.com/supabase/mcp">https://github.com/supabase/mcp</a></em></p>
+        <p class="desc">Schémas, requêtes et configuration Supabase.</p>
+      </article>
+    </section>
+
+    <section id="tests">
+      <h2>Tests, revue & sécurité</h2>
+      <p class="categorie-desc">Tests automatisés, relecture de code et détection de failles dans le code généré.</p>
+
+      <article>
+        <h3>Agent QA</h3>
+        <p class="lien"><em><a href="https://github.com/vostride/agent-qa">https://github.com/vostride/agent-qa</a></em></p>
+        <p class="desc">Tests web et mobiles rédigés en langage naturel.</p>
+      </article>
+
+      <article>
+        <h3>Playwright MCP</h3>
+        <p class="lien"><em><a href="https://github.com/microsoft/playwright-mcp">https://github.com/microsoft/playwright-mcp</a></em></p>
+        <p class="desc">Automatisation de navigateur via des instantanés structurés.</p>
+      </article>
+
+      <article>
+        <h3>PR-Agent</h3>
+        <p class="lien"><em><a href="https://github.com/The-PR-Agent/pr-agent">https://github.com/The-PR-Agent/pr-agent</a></em></p>
+        <p class="desc">Relecteur de pull requests maintenu par la communauté.</p>
+      </article>
+
+      <article>
+        <h3>Prbl</h3>
+        <p class="lien"><em><a href="https://getprbl.com">https://getprbl.com</a></em></p>
+        <p class="desc">Scan des failles fréquentes dans le code généré par IA.</p>
+      </article>
+
+      <article>
+        <h3>Qodo</h3>
+        <p class="lien"><em><a href="https://www.qodo.ai">https://www.qodo.ai</a></em></p>
+        <p class="desc">Moteur de revue de code par IA (ex-CodiumAI).</p>
+      </article>
+
+      <article>
+        <h3>Semgrep MCP</h3>
+        <p class="lien"><em><a href="https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp">https://github.com/semgrep/semgrep/tree/develop/cli/src/semgrep/mcp</a></em></p>
+        <p class="desc">Analyse de sécurité via le CLI Semgrep.</p>
+      </article>
+
+      <article>
+        <h3>Sentry MCP</h3>
+        <p class="lien"><em><a href="https://github.com/getsentry/sentry-mcp">https://github.com/getsentry/sentry-mcp</a></em></p>
+        <p class="desc">Inspection des erreurs applicatives pour diagnostiquer les échecs.</p>
+      </article>
+    </section>
+
+    <section id="deploiement">
+      <h2>Déploiement & build</h2>
+      <p class="categorie-desc">Mise en ligne des sites, exécution isolée du code et compilation des projets.</p>
+
+      <article>
+        <h3>Cloudflare MCP</h3>
+        <p class="lien"><em><a href="https://github.com/cloudflare/mcp-server-cloudflare">https://github.com/cloudflare/mcp-server-cloudflare</a></em></p>
+        <p class="desc">Gestion du déploiement et des ressources cloud.</p>
+      </article>
+
+      <article>
+        <h3>E2B</h3>
+        <p class="lien"><em><a href="https://github.com/e2b-dev/E2B">https://github.com/e2b-dev/E2B</a></em></p>
+        <p class="desc">Environnement cloud sécurisé (sandbox) pour agents.</p>
+      </article>
+
+      <article>
+        <h3>Publish.my</h3>
+        <p class="lien"><em><a href="https://publish.my/">https://publish.my/</a></em></p>
+        <p class="desc">Publication de sites statiques pilotée par agent.</p>
+      </article>
+
+      <article>
+        <h3>XcodeBuildMCP</h3>
+        <p class="lien"><em><a href="https://github.com/getsentry/XcodeBuildMCP">https://github.com/getsentry/XcodeBuildMCP</a></em></p>
+        <p class="desc">Outils de build et de debug pour projets Apple.</p>
+      </article>
+    </section>
+
+    <section id="orchestration">
+      <h2>Orchestration d'agents</h2>
+      <p class="categorie-desc">Espaces de travail qui font tourner plusieurs agents en parallèle, avec revue et suivi.</p>
+
+      <article>
+        <h3>Delta (Zed)</h3>
+        <p class="lien"><em><a href="https://delta.dev/">https://delta.dev/</a></em></p>
+        <p class="desc">Espace de travail multijoueur pour agents, avec revue des threads.</p>
+      </article>
+
+      <article>
+        <h3>Duckweed</h3>
+        <p class="lien"><em><a href="https://github.com/MusicMaster4/Duckweed">https://github.com/MusicMaster4/Duckweed</a></em></p>
+        <p class="desc">Espace de travail local multiplateforme pour agents.</p>
+      </article>
+
+      <article>
+        <h3>Parallel Code</h3>
+        <p class="lien"><em><a href="https://github.com/johannesjo/parallel-code">https://github.com/johannesjo/parallel-code</a></em></p>
+        <p class="desc">Agents dans des worktrees Git isolés.</p>
+      </article>
+
+      <article>
+        <h3>Shep</h3>
+        <p class="lien"><em><a href="https://github.com/shep-ai/shep">https://github.com/shep-ai/shep</a></em></p>
+        <p class="desc">Orchestration d'agents parallèles jusqu'aux pull requests brouillon.</p>
+      </article>
+
+      <article>
+        <h3>Superagent</h3>
+        <p class="lien"><em><a href="https://github.com/pungme/superagent-desktop">https://github.com/pungme/superagent-desktop</a></em></p>
+        <p class="desc">Espace de travail macOS pour Claude Code ou Codex.</p>
+      </article>
+    </section>
+
+    <section id="suivi">
+      <h2>Suivi & terminal</h2>
+      <p class="categorie-desc">Suivi des coûts et des quotas, et terminal pensé pour les agents.</p>
+
+      <article>
+        <h3>llm.log</h3>
+        <p class="lien"><em><a href="https://github.com/lanesket/llm.log">https://github.com/lanesket/llm.log</a></em></p>
+        <p class="desc">Suivi des coûts, tokens et traces via un proxy local.</p>
+      </article>
+
+      <article>
+        <h3>usage</h3>
+        <p class="lien"><em><a href="https://github.com/aqua5230/usage">https://github.com/aqua5230/usage</a></em></p>
+        <p class="desc">Affichage des quotas d'agents dans la barre de menus.</p>
+      </article>
+
+      <article>
+        <h3>Warp Terminal</h3>
+        <p class="lien"><em><a href="https://www.warp.dev/terminal">https://www.warp.dev/terminal</a></em></p>
+        <p class="desc">Terminal orienté agents.</p>
+      </article>
+    </section>
 
     <footer>© <span id="annee">2026</span> claude-prime · <a href="index.html">Accueil</a> · <a href="outils.html">Outils</a></footer>
   </main>
