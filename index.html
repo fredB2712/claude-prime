@@ -61,6 +61,7 @@
       font-weight: 600;
     }
     .bouton:hover { opacity: 0.9; }
+    .bouton + .bouton { margin-left: 8px; }
     footer { margin-top: 32px; font-size: 0.85rem; color: var(--muted); }
   </style>
 </head>
@@ -69,6 +70,7 @@
     <h1>Bienvenue sur <span>claude-prime</span></h1>
     <p>Ravi de vous voir ici ! Cette page est le point de départ du projet. Explorez le dépôt pour découvrir ce qui s'y construit.</p>
     <a class="bouton" href="https://github.com/fredB2712/claude-prime">Voir le dépôt</a>
+    <a class="bouton" href="outil.html">Liste d'outils</a>
     <footer>© <span id="annee">2026</span> claude-prime</footer>
   </main>
   <script>document.getElementById('annee').textContent = new Date().getFullYear();</script>
